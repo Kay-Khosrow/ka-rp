@@ -1,14 +1,11 @@
 #include <stdio.h>
-#include <stdio.h>
 
-int main(void)
-{
-	int y = 3e6;
-	printf("%d \n", y);
-	// atom light
-	y /= 10000;
-	printf("%d \n", y);
-	if (y != 0)
-		stderr("Error why?");
-	return 0;
+int numbers(int a, int b);
+
+int main(void) {
+  int w = numbers(2, 1);
+  fprintf(stderr, "%s\n\n%d\n", "salaam", w);
+  return 0;
 }
+
+int numbers(int a, int b) { return a * b; }

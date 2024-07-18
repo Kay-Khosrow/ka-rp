@@ -6,10 +6,17 @@
 //
 class Web {
 	public static void main (String[] args){
-		String appName = "App";
+		String appName = "AppName";
 		boolean isRunning = false;
 
-		System.out.println("Is running : " + isRunning + " " + appName);
-
+		System.out.println("Is running : " + isRunning + " " + appName+ "\n\n");
+    App nApp = new App();
+    System.out.println("\n"+nApp);
 	}
+}
+
+class App {
+  String main() {
+     return "Loading App";
+  }
 }
